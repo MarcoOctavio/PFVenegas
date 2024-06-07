@@ -1,0 +1,57 @@
+
+@font-face {
+    font-family: Rubik;
+    src: url(../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
+}
+/*section "body"*/
+body{
+    background-image: url(../assets/images/homephoto.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: Rubik, sans-serif;
+    color: black;
+}
+
+/*class "textBocks"*/
+.textBlocks{
+    color: black;
+    background-color: aliceblue;
+    position: relative;
+    margin: 10px 10px 20px 10px;
+
+}
+
+.headerLine{
+    display: inline;
+    position: relative;
+    color: black;
+    text-align: center;
+    left: 75%;
+    background-color: aliceblue;
+    font-size: 50px;
+    border: 10px solid black;
+}
+
+.footer{
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    background-color: aliceblue;
+    padding: 11px;
+    border: 2px color black;
+}
+
+.textBlocks2{
+    display: inline;
+    color: black;
+    background-color: aliceblue;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    background-color: aliceblue;
+}
+
+#about{
+    transform: scale(0.5);
+}
