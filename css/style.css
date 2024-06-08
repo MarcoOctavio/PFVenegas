@@ -56,3 +56,54 @@ body{
 #about{
     transform: scale(0.5);
 }
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    color: #333;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+h1 {
+    font-size: 36px;
+    color: #007bff;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.btn-social {
+    margin-top: 10px;
+}
