@@ -1,12 +1,29 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 @font-face {
     font-family: Rubik;
     src: url(../assets/fonts/Rubik-Italic-VariableFont_wght.ttf);
 }
+.ratio{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+}
+.ratio img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 357px;
+    height: auto;
+    object-fit: cover;
+}
+
 /*section "body"*/
 body{
-    /* background-image: url(../assets/images/homephoto.jpg); */
-
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
