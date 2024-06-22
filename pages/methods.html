@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos de Preparación de Café - Café Botella Azul</title>
     <meta name="description" content="Descubre los métodos de preparación de café como Chemex, Espresso, V60 y AeroPress en Café Botella Azul. Aprende sobre sus ingredientes y precios.">
-    <title>Methods</title>
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="./assets/images/anchor.svg" type="image/x-icon">
     <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="shortcut icon" href="../assets/images/anchor.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/images/anchor.svg" type="image/x-icon">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -20,28 +19,32 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
+                        <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./about.html">About</a>
+                        <a class="nav-link" href="./about.html">Acerca de</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./methods.html">Methods</a>
+                        <a class="nav-link" href="./methods.html">Métodos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./recipes.html">Recipes</a>
+                        <a class="nav-link" href="./recipes.html">Recetas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./shop.html">Shop</a>
+                        <a class="nav-link" href="./shop.html">Tienda</a>
                     </li>
                 </ul>
+                <form class="d-flex ms-auto" id="search-form">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar" id="search-input">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
             </div>
         </div>
     </nav>
 
     <div class="container my-5">
-        <h1 class="text-center">Métodos</h1>
-        <div class="row">
+        <h1 class="text-center">Métodos de Preparación de Café</h1>
+        <div class="row" id="methods-container">
             <div class="col-md-8 mx-auto">
                 <ul class="list-group">
                     <li class="list-group-item bg-info">
@@ -54,6 +57,7 @@
                         <h2>Espresso</h2>
                         <div class="container">
                             <p>El espresso es un método de preparación de café que implica forzar agua caliente a alta presión a través de una capa compacta de café molido fino. Este proceso produce una pequeña cantidad de café concentrado y altamente aromático en segundos. Se utiliza una máquina de espresso para preparar el café, que puede ajustarse para controlar la presión, la temperatura y el tiempo de extracción. El espresso es la base de muchas bebidas de café, como el cappuccino, el latte y el macchiato.</p>
+
                         </div>
                     </li>
                     <li class="list-group-item bg-info">
@@ -63,7 +67,7 @@
                         </div>
                     </li>
                     <li class="list-group-item bg-info">
-                        <h2>Aeropress</h2>
+                        <h2>AeroPress</h2>
                         <div class="container">
                             <p>El AeroPress es un dispositivo de preparación de café compacto y portátil que utiliza presión de aire para extraer el café. Los granos de café molidos se colocan en un cilindro junto con agua caliente y se agitan suavemente. Después de un breve tiempo de infusión, se utiliza un émbolo para ejercer presión sobre la mezcla, forzando el café a través de un filtro y en la taza. El AeroPress es apreciado por su versatilidad, rapidez y capacidad para producir un café con cuerpo y sabores intensos.</p>
                         </div>
@@ -73,13 +77,14 @@
         </div>
     </div>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/search.js"></script>
 </body>
 
-    <footer class="bg-light text-center py-4">
-        <h5>Café Botella Azul</h5>
-        <p>Síguenos en nuestras redes sociales</p>
-        <a href="https://www.facebook.com" class="btn btn-primary mx-1">Facebook</a>
-        <a href="https://www.twitter.com" class="btn btn-info mx-1">Twitter (X)</a>
-        <a href="https://www.youtube.com" class="btn btn-danger mx-1">YouTube</a>
-    </footer>
+<footer class="bg-light text-center py-4">
+    <h5>Café Botella Azul</h5>
+    <p>Síguenos en nuestras redes sociales</p>
+    <a href="https://www.facebook.com" class="btn btn-primary mx-1">Facebook</a>
+    <a href="https://www.twitter.com" class="btn btn-info mx-1">Twitter (X)</a>
+    <a href="https://www.youtube.com" class="btn btn-danger mx-1">YouTube</a>
+</footer>
 </html>
