@@ -1,0 +1,141 @@
+// Reset general de estilos
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// Fuentes
+@font-face {
+    font-family: 'Rubik';
+    src: url('../assets/fonts/Rubik-Italic-VariableFont_wght.ttf');
+}
+
+// Estilos del body
+body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Rubik', sans-serif;
+    color: black;
+}
+
+// Clase ratio
+.ratio {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 357px;
+        height: auto;
+        object-fit: cover;
+    }
+}
+
+// Formato de Grilla
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.product-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    img {
+        max-width: 100%;
+        height: 243.67px;
+        border-radius: 4px;
+        padding: 10px;
+        object-fit: scale-down;
+    }
+
+    h5 {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    p {
+        font-size: 1em;
+        color: #333;
+    }
+}
+
+// Botón de compra
+.shopping-btn {
+    text-align: center;
+    padding: 5px 15px;
+    background-color: #4CAF50;
+    border: none;
+    color: black;
+    display: inline-block;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.2s;
+    position: static;
+
+    &:hover {
+        background-color: #4caf4f8b;
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.receta-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.receta-item {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    img {
+        max-width: 100%;
+        height: 243.67px;
+        border-radius: 4px;
+        padding: 10px;
+        object-fit: scale-down;
+    }
+
+    h5, h2, h3 {
+        //font-size: 1.2em;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1em;
+        color: #333;
+    }
+}
