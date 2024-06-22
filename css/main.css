@@ -39,6 +39,15 @@ body {
   margin: auto;
 }
 
+.receta-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
 .product-item {
   background-color: white;
   border: 1px solid #ccc;
@@ -61,43 +70,6 @@ body {
 .product-item p {
   font-size: 1em;
   color: #333;
-}
-
-.shopping-btn {
-  text-align: center;
-  padding: 5px 15px;
-  background-color: #4CAF50;
-  border: none;
-  color: black;
-  display: inline-block;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s, transform 0.2s;
-  position: static;
-}
-.shopping-btn:hover {
-  background-color: rgba(76, 175, 79, 0.5450980392);
-}
-.shopping-btn:active {
-  transform: scale(0.95);
-}
-
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  padding: 20px;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.receta-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 20px;
-  max-width: 1200px;
-  margin: auto;
 }
 
 .receta-item {
@@ -123,4 +95,23 @@ body {
   color: #333;
 }
 
-/*# sourceMappingURL=style_old.css.map */
+.shopping-btn {
+  text-align: center;
+  padding: 5px 15px;
+  background-color: #4CAF50;
+  border: none;
+  color: black;
+  display: inline-block;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+  position: static;
+  &:hover {
+    background-color: rgba(76, 175, 79, 0.5450980392);
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

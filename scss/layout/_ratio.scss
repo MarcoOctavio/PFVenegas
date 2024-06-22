@@ -1,0 +1,14 @@
+.ratio {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 357px;
+        height: auto;
+        object-fit: cover;
+    }
+}
