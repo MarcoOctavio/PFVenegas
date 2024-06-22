@@ -30,7 +30,7 @@ body{
     height: auto;
     object-fit: cover;
 }
-
+/* Formato de Grilla */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -86,8 +86,12 @@ body{
 .shopping-btn:active{
     transform: scale(0.95);
 }
+
+
+
+
 /*class "textBocks"*/
-.textBlocks{
+/* .textBlocks{
     color: black;
     background-color: aliceblue;
     position: relative;
@@ -178,4 +182,6 @@ footer {
 
 .btn-social {
     margin-top: 10px;
-}
+} */
+
+
