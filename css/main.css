@@ -95,6 +95,16 @@ body {
   color: #333;
 }
 
+#footer-list ul {
+  list-style: none;
+  display: inline;
+}
+#footer-list li {
+  padding: 10px 0;
+  display: inline;
+  vertical-align: top;
+}
+
 .shopping-btn {
   text-align: center;
   padding: 5px 15px;
@@ -106,12 +116,12 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.3s, transform 0.2s;
   position: static;
-  &:hover {
-    background-color: rgba(76, 175, 79, 0.5450980392);
-  }
-  &:active {
-    transform: scale(0.95);
-  }
+}
+.shopping-btn:hover {
+  background-color: rgba(76, 175, 79, 0.5450980392);
+}
+.shopping-btn:active {
+  transform: scale(0.95);
 }
 
 /*# sourceMappingURL=main.css.map */
