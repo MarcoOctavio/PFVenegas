@@ -19,15 +19,18 @@ body {
 .ratio {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%;
+  padding-bottom: 60%;
 }
 .ratio img {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 357px;
-  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  max-width: 100%;
   object-fit: cover;
+  width: auto;
+  height: auto;
 }
 
 .product-grid {
@@ -37,6 +40,26 @@ body {
   padding: 20px;
   max-width: 1200px;
   margin: auto;
+}
+@media (max-width: 1280px) {
+  .product-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 360px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .receta-grid {

@@ -5,6 +5,19 @@
     padding: 20px;
     max-width: 1200px;
     margin: auto;
+
+    @media (max-width: 1280px){
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @media (max-width: 1024px){
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 768px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 360px){
+        grid-template-columns: (1fr);
+    }
 }
 .receta-grid {
     display: grid;
