@@ -126,6 +126,25 @@
         </div>
 
   </section>    
+
+  <section class="container my-5">
+    <h4>Calculadora de ratios para tus recetas</h4>
+    <div class="col-md-2">
+      <label for="gramosCafe">Gramos de Café:</label>
+      <input type="number" id="gramosCafe">
+  </div>
+
+  <div class="col-md-2">
+      <label for="ratio">Ratio (1:X):</label>
+      <input type="number" id="ratio">
+
+    <button class="btn btn-primary" onclick="calcular()">Calcular</button>
+  </div>
+  <h2>Resultados:</h2>
+  <p id="gramosAgua">Gramos de Agua: 0</p>
+
+</section>
+
   <footer class="bg-light text-center py-4">
       <h5>Café Botella Azul</h5>
       <h6>Síguenos en nuestras redes sociales:</h6>
@@ -137,5 +156,6 @@
   </footer>
     
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/ratiocalc.js"></script>
 </body>
 </html>
