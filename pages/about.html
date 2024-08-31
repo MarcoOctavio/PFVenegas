@@ -59,20 +59,20 @@
         </div>
       </section>
 
-    <section class="container my-5">
-      <h4>Aquí te puedes registrar a nuestra comunidad</h4>
-      <form class="row g-3">
+      <section class="container my-5">
+        <h4>Aquí te puedes registrar a nuestra comunidad</h4>
+        <form class="row g-3" id="registerForm">
           <div class="col-md-6">
             <label for="inputEmail4" class="form-label">Email</label>
-            <input type="email" class="form-control" id="inputEmail4">
+            <input type="email" class="form-control" id="inputEmail4" required>
           </div>
           <div class="col-md-6">
             <label for="inputPassword4" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="inputPassword4">
+            <input type="password" class="form-control" id="inputPassword4" required>
           </div>
           <div class="col-12">
             <label for="inputAddress" class="form-label">Dirección</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St" required>
           </div>
           <div class="col-12">
             <label for="inputAddress2" class="form-label">Dirección 2</label>
@@ -80,20 +80,19 @@
           </div>
           <div class="col-md-6">
             <label for="inputCity" class="form-label">Ciudad</label>
-            <input type="text" class="form-control" id="inputCity">
+            <input type="text" class="form-control" id="inputCity" required>
           </div>
           <div class="col-md-4">
             <label for="inputState" class="form-label">Estado o región</label>
-            <select id="inputState" class="form-select">
-              <option selected>Selecciona...</option>
-              <option>...</option>
+            <select id="inputState" class="form-select" required>
+              <option selected disabled>Selecciona...</option>
               <option>Ciudad de México</option>
               <option>Buenos Aires</option>
             </select>
           </div>
           <div class="col-md-2">
             <label for="inputZip" class="form-label">Código Postal</label>
-            <input type="text" class="form-control" id="inputZip">
+            <input type="text" class="form-control" id="inputZip" required>
           </div>
           <div class="col-12">
             <div class="form-check">
@@ -107,7 +106,8 @@
             <button type="submit" class="btn btn-primary">Registrar</button>
           </div>
         </form>
-    </section>
+      </section>
+
     </main>
   <footer class="bg-light text-center py-4">
       <h5>Café Botella Azul</h5>
@@ -120,6 +120,7 @@
   </footer>  
 
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/registerForm.js"></script>
 </body>
 
 </html>

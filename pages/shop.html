@@ -47,74 +47,74 @@
 <div id="shopping">
     <h1 class="text-center">Tienda en linea</h1>
     <div class="product-grid">
-        <div class="product-item">
+        <div class="product-item" data-price="10">
             <img src="../assets/images/jarra_Hairo.jpg" alt="Jarra Hario">
             <h5>Jarra Hairo</h5>
             <p>$10.00</p>
             <button class="shopping-btn">Comprar</button>
 
         </div>
-        <div class="product-item">
+        <div class="product-item" data-price="15">
             <img src="../assets/images/Aeropress.jpg" alt="Aeropress">
             <h5>Aeropress</h5>
             <p>$15.00</p>
             <button class="shopping-btn">Comprar</button>
         </div>
-        <div class="product-item">
+        <div class="product-item" data-price="20">
             <img src="../assets/images/V60_Hario.jpg" alt="V60 hario">
             <h5>V60 Hario</h5>
             <p>$20.00</p>
             <button class="shopping-btn">Comprar</button>
         </div>
-        <div class="product-item">
+        <div class="product-item" data-price="25">
             <img src="../assets/images/Kalita.jpg" alt="Kalita">
             <h5>Kalita</h5>
             <p>$25.00</p>
             <button class="shopping-btn">Comprar</button>
         </div>
-        <div class="product-item">
+        <div class="product-item" data-price="30">
             <img src="../assets/images/Molino_manual.jpg" alt="Molino manual">
             <h5>Molino manual Comandante</h5>
             <p>$30.00</p>
             <button class="shopping-btn">Comprar</button>
         </div>
-        <div class="product-item">
+        <div class="product-item" data-price="35">
             <img src="../assets/images/Jarrra_CelloCisne.jpg" alt="Jarra cuello cisne">
             <h5>Jarra cuello de Cisne</h5>
             <p>$35.00</p>
             <button class="shopping-btn">Comprar</button>
         </div>
-        <div class="product-item">
+        <div class="product-item" data-price="40">
             <img src="../assets/images/Chemex_Producto.jpg" alt="Chemex">
             <h5>Método Chemex</h5>
             <p>$40.00</p>
             <button class="shopping-btn">Comprar</button>
         </div>
-        <div class="product-item">
+        <div class="product-item" data-price="45">
             <img src="../assets/images/PrensaFrancesa.jpg" alt="Prensa Francesa">
             <h5>Prensa Francesa</h5>
             <p>$45.00</p>
             <button class="shopping-btn">Comprar</button>
         </div>
-        <div class="product-item">
+        <div class="product-item" data-price="50">
             <img src="../assets/images/MezclaCafe.jpg" alt="Mezcla Café">
             <h5>Mezcla Café 1</h5>
             <p>$50.00</p>
             <button class="shopping-btn">Comprar</button>
         </div>
-        <div class="product-item">
+        <div class="product-item" data-price="55">
             <img src="../assets/images/MezclaCafe.jpg" alt="Mezcla Café">
             <h5>Mezcla Café 2</h5>
             <p>$55.00</p>
             <button class="shopping-btn">Comprar</button>
         </div>
-        <div class="product-item">
+        <div class="product-item" data-price="60">
             <img src="../assets/images/MezclaCafe.jpg" alt="Mezcla Café">
             <h5>Mezcal Café 3</h5>
             <p>$60.00</p>
             <button class="shopping-btn">Comprar</button>
         </div>
-        <div class="product-item">
+        <div class="product-item" data-price="65">
             <img src="../assets/images/MezclaCafe.jpg" alt="Mezcla Café">
             <h5>Mezcla Café 4</h5>
             <p>$65.00</p>
@@ -124,6 +124,11 @@
 
 <div class="container my-3 text-center">
     <button class="btn btn-primary" id="btnBuscar">Buscar Productos</button>
+</div>
+
+<div class="container my-3 text-center">
+    <h3>Total Carrito: $<span id="cart-total">0.00</span></h3>
+    <button class="btn btn-primary" id="btnCheckout">Checkout</button>
 </div>
 
 <footer class="bg-light text-center py-4">
@@ -136,5 +141,6 @@
     </ul>
 </footer>
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/shop.js"></script>
 </body>
 </html>
