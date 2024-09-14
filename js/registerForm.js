@@ -1,7 +1,10 @@
-document.getElementById('registerForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Evitar el envío del formulario por defecto
+let users = [];
 
-    // Capturar los valores de los inputs
+
+document.getElementById('registerForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    //inputs
     const email = document.getElementById('inputEmail4').value;
     const password = document.getElementById('inputPassword4').value;
     const address = document.getElementById('inputAddress').value;
@@ -15,6 +18,7 @@ document.getElementById('registerForm').addEventListener('submit', function(even
     if (!email || !password || !address || !city || !state || !zip) {
       alert("Por favor completa todos los campos obligatorios.");
       return;
+      
     }
 
     // Crear un objeto con los datos del formulario
@@ -29,12 +33,17 @@ document.getElementById('registerForm').addEventListener('submit', function(even
       receiveEmails
     };
 
-    // Aquí puedes enviar los datos a un servidor o procesarlos como desees
-    console.log('Datos del formulario:', formData);
+    
 
-    // Simulación de registro exitoso
-    alert("Registro exitoso! Bienvenido a la comunidad.");
+    //añadir a lista de usuarios
+    users.push(formData);
+    const usersJSON = JSON.stringify(users);
 
-    // Restablecer el formulario (opcional)
+    console.log('Usuarios registrados (JSON):', usersJSON);
+
+    localStorage.setItem('users', usersJSON);
+
+    alert('Registro exitoso. ¡Bienvenid@ a nuestra comunidad!');
+
     this.reset();
   });

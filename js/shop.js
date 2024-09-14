@@ -29,3 +29,11 @@ let cart = [];
         document.getElementById('btnCheckout').addEventListener('click', () => {
             alert(`Total a pagar: $${cartTotalElement.innerText}`);
         });
+
+        document.getElementById('btnClearCart').addEventListener('click', () => {
+            cart = [];  // Vaciamos el carrito
+            updateCartTotal();  // Actualizamos el total a $0.00
+            localStorage.removeItem('cart');  // Eliminamos el carrito guardado en el localStorage
+            alert('El carrito ha sido vaciado.');
+        });
+        
