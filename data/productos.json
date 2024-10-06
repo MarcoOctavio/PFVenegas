@@ -1,0 +1,74 @@
+[
+    {
+      "id": 1,
+      "name": "Jarra Hairo",
+      "price": 10.00,
+      "image": "../assets/images/jarra_Hairo.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Aeropress",
+      "price": 15.00,
+      "image": "../assets/images/Aeropress.jpg"
+    },
+    {
+      "id": 3,
+      "name": "V60 Hario",
+      "price": 20.00,
+      "image": "../assets/images/V60_Hario.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Kalita",
+      "price": 25.00,
+      "image": "../assets/images/Kalita.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Molino manual Comandante",
+      "price": 30.00,
+      "image": "../assets/images/Molino_manual.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Jarra cuello de Cisne",
+      "price": 35.00,
+      "image": "../assets/images/Jarrra_CelloCisne.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Método Chemex",
+      "price": 40.00,
+      "image": "../assets/images/Chemex_Producto.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Prensa Francesa",
+      "price": 45.00,
+      "image": "../assets/images/PrensaFrancesa.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Mezcla Café 1",
+      "price": 50.00,
+      "image": "../assets/images/MezclaCafe.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Mezcla Café 2",
+      "price": 55.00,
+      "image": "../assets/images/MezclaCafe.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Mezcal Café 3",
+      "price": 60.00,
+      "image": "../assets/images/MezclaCafe.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Mezcla Café 4",
+      "price": 65.00,
+      "image": "../assets/images/MezclaCafe.jpg"
+    }
+  ]
