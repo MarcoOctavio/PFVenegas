@@ -6,8 +6,8 @@ function calcular() {
     // Verifica si los valores son mayores a 0
     if (ratio > 0 && gramosCafe > 0) {
         // Calcula los gramos de agua
-        const gramosAgua = gramosCafe * ratio;
-
+        let gramosAgua = gramosCafe * ratio;
+        gramosAgua = gramosAgua.toFixed(2);
         // Muestra el resultado en la página
         document.getElementById('gramosAgua').innerText = `Cantidad de Agua: ${gramosAgua} gramos`;
     } else {

@@ -16,7 +16,13 @@ document.getElementById('registerForm').addEventListener('submit', function(even
 
     // Validaciones simples
     if (!email || !password || !address || !city || !state || !zip) {
-      alert("Por favor completa todos los campos obligatorios.");
+      //alert("Por favor completa todos los campos obligatorios.");
+      Swal.fire({
+        title: "Campos incompletos", 
+        text: "Revisa que todos los campos estén completos",
+        icon: 'warning',
+        confirmationButonText: "ok"
+      });
       return;
       
     }
@@ -43,7 +49,12 @@ document.getElementById('registerForm').addEventListener('submit', function(even
 
     localStorage.setItem('users', usersJSON);
 
-    alert('Registro exitoso. ¡Bienvenid@ a nuestra comunidad!');
-
+    //alert('Registro exitoso. ¡Bienvenid@ a nuestra comunidad!');
+    Swal.fire({
+      title: 'Formulario Completo',
+      text: '¡Gracias por completar el formulario!',
+      icon: 'success',
+      confirmButtonText: 'Ok'
+  });
     this.reset();
   });
